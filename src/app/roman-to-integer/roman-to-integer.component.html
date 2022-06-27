@@ -1,0 +1,7 @@
+<p>Enter a roman number, I'll convert it to an integer for you!</p>
+<!-- create template reference variable first -->
+<input #input type="text">
+<button type="button" (click)="romanToInteger(input.value)">enter</button>
+<p *ngIf="invalid">Invalid Input!</p>
+<p *ngIf="final != -1 && !invalid"> The result is {{final}}</p>
+<button *ngIf="final != -1" type="button" (click)="reset()">reset</button>
