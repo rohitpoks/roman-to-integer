@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
+  // global
   providedIn: 'root',
 })
 export class ProcessInputService {

@@ -2,6 +2,4 @@
 <!-- create template reference variable first -->
 <input #input type="text">
 <button type="button" (click)="romanToInteger(input.value)">enter</button>
-<p *ngIf="invalid">Invalid Input!</p>
-<p *ngIf="final != -1 && !invalid"> The result is {{final}}</p>
-<!-- <button type="button" (click)="reset()">CLEAR</button> -->
+<p> {{ result }} </p>
